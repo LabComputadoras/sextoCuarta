@@ -7,20 +7,18 @@ public class Teclado {
     public static void main(String[] args) {
         
         Scanner teclado = new Scanner(System.in);
+        int edad;
+        System.out.println("Por favor, ingrese su edad: ");
+        edad = teclado.nextInt();
         
-        int numero;
-        float numeroRacional;
-        String texto;
+        if(edad >= 18) {
+            System.out.println("Podes pasar.");
+        } else {
+            System.out.println("No podes pasar.");
+        }
         
-        System.out.println("Por favor, ingrese un número:");                    // Mensaje decorativo.
-        numero = teclado.nextInt();                                                // Se lee un número entero.
-        System.out.println("El número que ingresó fue: " + numero);             // Imprimimos el resultao.
-        System.out.println("Por favor, ingrese un número con parte decimal:");
-        numeroRacional = teclado.nextFloat();                                   // Se lee un número del tipo float
-        System.out.println("El número ingresado fue: " + numeroRacional);
-        System.out.println("Por favor, escribí tu nombre: ");
-        teclado.nextLine();                                                     // Se purga el enter.
-        texto = teclado.nextLine();                                             // Leemos una línea de texto.
-        System.out.println("Su nombre es " + texto);
+        System.out.println("El programa finalizó.");
+        
+        
     } 
 }
