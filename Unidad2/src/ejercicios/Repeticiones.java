@@ -3,16 +3,19 @@ package ejercicios;
 public class Repeticiones {
     public static void main(String[] args) {
 
-        int edad = 12;      // Declaramos una variable entera que inicialmente vale 12.
+        int edad = 12;
 
         while(edad < 18){
-            System.out.println("Sos menor de edad, no podes pasar.");
+            System.out.print("Tu edad es " + edad);
+            System.out.println(", por lo tanto, no podes pasar.");
+            edad++;     // Incrementamos la edad en cada iteración.
         }
 
+        System.out.println("Sos mayor de edad, ya podes pasar ;)");
     }
 }
 
 /*
-  En este caso, la condición del while siempre se cumple y nunca se deja de cumplir. Por lo tanto, hemos generado un
-  bucle infinito.
+  Ahora, dentro del while incrementamos el valor de edad en cada iteración. Por lo tanto, en algún momento se dejará de
+  cumplir la condición, interrumpiendo de esta manera las repeticiones.
 */
