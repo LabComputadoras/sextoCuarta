@@ -11,10 +11,15 @@ public class Teclado {
         float variableRacional;
         String variableTexto;
 
+        System.out.println("Ingrese un número entero: ");       // Mensaje instructivo para el usuario.
         variableEntera = teclado.nextInt();
+
+        System.out.println("Ingrese un número con decimales");  // Mensaje instructivo para el usuario.
         variableRacional = teclado.nextFloat();
-        teclado.nextLine();                         // Purgamos la entrada antes de leer un texto.
-        variableTexto =  teclado.nextLine();        // Leemos el texto una vez purgado.
+
+        System.out.println("Ingrese su nombre: ");              // Mensaje instructivo para el usuario.
+        teclado.nextLine();
+        variableTexto =  teclado.nextLine();
 
         System.out.println("El número ingresado fue: " + variableEntera);
         System.out.println("El racional ingresado fue: " + variableRacional);
