@@ -1,6 +1,6 @@
 package ejercicios;
 
-import java.util.Scanner;       // Importamos la clase Scanner para poder crer un objeto.
+import java.util.Scanner;
 
 public class Decisiones {
     public static void main(String[] args) {
@@ -12,16 +12,16 @@ public class Decisiones {
         edad = ent.nextInt();
 
         if (edad > 18){
-            System.out.println("Es mayor de edad, puede ingresar :)");
-        } else {    // Comienzo del else.
-
-        }           // Fin del else.
+            System.out.println("Es mayor de edad, puede ingresar :)");      // Esta línea solo se ejecuta si la condición es verdadera.
+        } else {
+            System.out.println("No puede pasar, es menor de edad.");        // Esta línea solo se ejecuta si la condición es falsa.
+        }
 
         System.out.println("Llegamos al final del código.");
     }
 }
 
 /*
- Else es una estructura opcional que podemos añadir si deseeamos programar un coportamiento que solamente se ejecutará
- si la condición resulta falsa.
+    En este caso, si la edad ingresada por el usuario es mayor que 18 se mostrará el mensaje del if pero si la edad es
+    menor que 18 veremos el mensaje del else.
 */
