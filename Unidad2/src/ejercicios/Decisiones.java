@@ -3,7 +3,7 @@ package ejercicios;
 public class Decisiones {
     public static void main(String[] args) {
 
-        int edad = 19;  // Se declara una variable entera que inicialmente vale 19.
+        int edad = 17;  // Se declara una variable entera que inicialmente vale 17.
 
         if (edad > 18){
             System.out.println("Es mayor de edad, puede ingresar :)");
@@ -12,4 +12,4 @@ public class Decisiones {
     }
 }
 
-// Al cumplirse la condición del if, en la consola veremos tanto el mensaje de dentro del if como el de fuera.
+// Al no cumplirse la condición del if, en la consola solo veremos el mensaje de fuera del if.
