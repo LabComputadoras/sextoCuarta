@@ -7,17 +7,18 @@ public class Teclado {
 
         Scanner teclado = new Scanner(System.in);
 
-        int variableEntera;         // Declaramos una variable para almacenar enteros.
-        float variableRacional;     // Declaramos una variable que admite decimales.
-        String variableTexto;       // Declaramos una variable para almacenar texto.
+        int variableEntera;
+        float variableRacional;
+        String variableTexto;
 
-        variableEntera = teclado.nextInt();     // Utilizamos el método nextInt() para leer un entero.
-        variableRacional = teclado.nextFloat(); // Utilizamos el método nextFloat() para leer un float.
-        variableTexto =  teclado.nextLine();    // Utilizamos el método nextLine() para leer un String.
+        variableEntera = teclado.nextInt();
+        variableRacional = teclado.nextFloat();
+        teclado.nextLine();                         // Purgamos la entrada antes de leer un texto.
+        variableTexto =  teclado.nextLine();        // Leemos el texto una vez purgado.
 
-        System.out.println("El número ingresado fue: " + variableEntera);       // Imprimimos en pantalla el entero ingresado.
-        System.out.println("El racional ingresado fue: " + variableRacional);   // Imprimimos en pantalla el racional ingresado.
-        System.out.println("El texto ingreado fue: " + variableTexto);          // Imprimios en pantalla el texto ingresando.
+        System.out.println("El número ingresado fue: " + variableEntera);
+        System.out.println("El racional ingresado fue: " + variableRacional);
+        System.out.println("El texto ingreado fue: " + variableTexto);
 
     }
 }
