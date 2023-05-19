@@ -1,9 +1,15 @@
 package ejercicios;
 
+import java.util.Scanner;       // Importamos la clase Scanner para poder crer un objeto.
+
 public class Decisiones {
     public static void main(String[] args) {
 
-        int edad = 17;  // Se declara una variable entera que inicialmente vale 17.
+        int edad;
+        Scanner ent = new Scanner(System.in);                           // Creamos un objeto Scanner para las entradas manuales.
+
+        System.out.println("Por favor, ingrese su edad.");              // Instrucción para el usuario.
+        edad = ent.nextInt();                                           // Leemos la edad del usuario y la guardamos en la variable edad.
 
         if (edad > 18){
             System.out.println("Es mayor de edad, puede ingresar :)");
@@ -12,4 +18,4 @@ public class Decisiones {
     }
 }
 
-// Al no cumplirse la condición del if, en la consola solo veremos el mensaje de fuera del if.
+// Ahora, dependiendo de la edad que digite el usuario, las lineas del if podrían o no ejecutarse.
