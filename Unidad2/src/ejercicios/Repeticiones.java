@@ -3,17 +3,16 @@ package ejercicios;
 public class Repeticiones {
     public static void main(String[] args) {
 
-        while(aca hay que poner una condición){     //  Comienzo del while.
+        int edad = 12;      // Declaramos una variable entera que inicialmente vale 12.
 
-
-        }                                           // Fin del while.
+        while(edad < 18){
+            System.out.println("Sos menor de edad, no podes pasar.");
+        }
 
     }
 }
 
 /*
-    While es una estructura que repetirá todas las líneas escritas en su interior siempre y cuando la condición que
-    hayamos especificado se cumpla.
-    Si en un primer momento, la condición no se cumple, se ignorará el contenido del while y se continuará con la ejecución
-    normal del código.
- */
+  En este caso, la condición del while siempre se cumple y nunca se deja de cumplir. Por lo tanto, hemos generado un
+  bucle infinito.
+*/
