@@ -1,4 +1,4 @@
-package ejercicios;
+package explicaciones;
 
 public class Repeticiones {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ejercicios;
+package explicaciones;
 
 public class PrimerPrograma {
     public static void main(String[] args) {
