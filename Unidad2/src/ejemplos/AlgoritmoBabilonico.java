@@ -5,38 +5,46 @@ import java.util.Scanner;
 public class AlgoritmoBabilonico {
     public static void main(String[] args) {
 
-        // Declaración de variables
+        float cateto1;
+        float cateto2;
+        float hipo;
+        float suma;
+        float tol = 0.01f;
 
-        float area;
-        float tol;
-        float base;
-        float altura;
-        float error;
         Scanner ent = new Scanner(System.in);
 
-        // Entrada de datos
+        System.out.println("Ingrese el valor de un cateto: ");
+        cateto1 = ent.nextFloat();
+        System.out.println("Ingrese el valor de otro cateto: ");
+        cateto2 = ent.nextFloat();
 
-        System.out.println("Por favor, ingrese un número para calcular su raiz");
-        area = ent.nextFloat();
-        System.out.println("Por favor, ingrese la precisión deseada del resultado");
-        tol = ent.nextFloat();
+        suma = cateto1*cateto1 + cateto2*cateto2;
+        hipo = raiz(suma,tol);
 
-        // Inicialización de variables
+        System.out.println("La hipotenusa es de " + hipo);
 
-        base = area;
-        altura = area / base;
-        error = Math.abs(base - altura);
-
-        // Loop
-
-        while(error > tol) {
-            base = (base + altura) / 2;
-            altura = area / base;
-            error = Math.abs(base - altura);
-        }
-
-        // Mostrar resultados
-
-        System.out.println("La raíz que busca es: " + base);
     }
+
+   static float raiz(float area, float tol) {
+
+       float base;
+       float altura;
+       float error;
+
+
+       // Inicialización de variables
+
+       base = area;
+       altura = area / base;
+       error = Math.abs(base - altura);
+
+       // Loop
+
+       while(error > tol) {
+           base = (base + altura) / 2;
+           altura = area / base;
+           error = Math.abs(base - altura);
+       }
+        return base;
+   }
 }
