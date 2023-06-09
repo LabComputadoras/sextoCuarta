@@ -15,7 +15,7 @@ public class Ejercicio27 {
         for (int i = 0; i < 10; i++) {
             System.out.println("Por favor, ingrese un número");
             numero = ent.nextInt();
-            if(numero % 2 == 0){
+            if(esPar(numero)){
                 sumaPares += numero;
                 contPares++;
             }
@@ -25,5 +25,8 @@ public class Ejercicio27 {
 
         System.out.println("El promedio de los pares fue: " + promedioPares);
 
+    }
+    static boolean esPar(int numero){
+        return numero % 2 == 0;
     }
 }
