@@ -12,4 +12,13 @@ public class Funciones {
         int b = min;
         return (int) Math.floor(Math.random() * a + b);
     }
+
+    public static int[] vectorAleatorio (int dim, int min, int max) {
+
+        int[] vectorAleatorio = new int[dim];
+        for (int i = 0; i < dim; i++) {
+            vectorAleatorio[i] = enteroAleatorio(min, max);
+        }
+        return vectorAleatorio;
+    }
 }
