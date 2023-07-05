@@ -6,4 +6,10 @@ public class Funciones {
             System.out.println(elemento);
         }
     }
+
+    public static int enteroAleatorio (int min, int max) {
+        int a = max - min + 1;
+        int b = min;
+        return (int) Math.floor(Math.random() * a + b);
+    }
 }
