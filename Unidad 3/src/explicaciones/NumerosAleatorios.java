@@ -1,18 +1,21 @@
 package explicaciones;
 
+import funciones.Funciones.*;
+
+import static funciones.Funciones.enteroAleatorio;
+import static funciones.Funciones.imprimirVector;
+
 public class NumerosAleatorios {
     public static void main(String[] args) {
         int max = 20;
         int min = 10;
-        int a;
-        int b;
-        double r;
+        int[] vectorAleatorio = new int[30];
 
-        a = max - min;
-        b = min;
+        for (int i = 0; i < vectorAleatorio.length; i++) {
+            vectorAleatorio[i] = enteroAleatorio(min,max);
+        }
 
-        r = Math.random() * a + b;
-        System.out.println(r);
-
+        System.out.println();
+        imprimirVector(vectorAleatorio);
     }
 }
