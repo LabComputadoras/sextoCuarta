@@ -1,5 +1,7 @@
 package explicaciones;
 
+import static funciones.Funciones.*;
+
 public class Vectores {
     public static void main(String[] args) {
         int[] vector = {1,2,3};
@@ -9,10 +11,6 @@ public class Vectores {
         imprimirVector(vector);
     }
 
-    static void imprimirVector(int[] vector) {
-        for (int i = 0; i < vector.length; i++) {
-            System.out.println(vector[i]);
-        }
-    }
+
 
 }
